@@ -1,6 +1,7 @@
 import React from "react";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import DogPicture from "./DogPicture";
 
 const TabBar:React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const TabBar:React.FC = () => {
       className="mb-3"
     >
       <Tab eventKey="home" title="Home">
-        <p>Hello</p>
+        <DogPicture/>
       </Tab>
       <Tab eventKey="profile" title="Profile">
         <p>Hello2</p>
