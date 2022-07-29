@@ -1,27 +1,12 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TabBar from "./Components/TabBar";
 
 function App() {
-  const [ counter , setCounter ] = useState(0);
-
-  const incrementCounter = ():void => {
-    setCounter(counter+1);
-  }
-
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-        <h1>
-          {counter}
-        </h1>
-        <button onClick={incrementCounter}>
-          Add one
-        </button>
-      </header>
+      <TabBar />
     </div>
   );
 }
